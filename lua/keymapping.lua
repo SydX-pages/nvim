@@ -1,3 +1,7 @@
+vim.g.mapleader = "\\"
+vim.g.maplocalleader = "\\"
+
+--Basic Operations
 vim.keymap.set("i","<C-h>","<Left>")
 vim.keymap.set("i","<C-l>","<Right>")
 vim.keymap.set("i","<C-j>","<Down>")
@@ -11,5 +15,40 @@ vim.keymap.set("n","<C-k>","<C-w>k")
 vim.keymap.set("n","<C-Left>","<C-w>h")
 vim.keymap.set("n","<C-Right>","<C-w>l")
 
-vim.keymap.set("n","<C-o>","<C-i>")
-vim.keymap.set("n","<C-i>","<C-o>")
+vim.keymap.set("i","<C-p>","<C-o>p")
+
+vim.keymap.set("i","<C-z>","<C-o>u")
+vim.keymap.set("i","<C-y>","<C-o><C-r>")
+vim.keymap.set("n","<C-z>","u")
+vim.keymap.set("n","<C-y>","<C-r>")
+
+
+--Save and Buffer actions
+vim.keymap.set("n","<C-s>","<cmd>w<CR>")
+--vim.keymap.set("n","<leader>bd","<cmd>bd<CR>")
+--vim.keymap.set("n","<leader>bn","<cmd>bn<CR>")
+--vim.keymap.set("n","<leader>bp","<cmd>bp<CR>")
+vim.keymap.set("n","<Tab>","<cmd>bn<CR>")
+vim.keymap.set("n","<S-Tab>","<cmd>bp<CR>")
+vim.keymap.set("i","<C-s>","<cmd>w<CR>")
+vim.keymap.set("n","<C-w>","<cmd>bd<CR>")
+vim.keymap.set("i","<C-w>","<cmd>bd<CR>")
+vim.keymap.set("n","<C-q>","<cmd>q<CR>")
+vim.keymap.set("i","<C-q>","<cmd>q<CR>")
+
+
+--Insert Choose
+vim.keymap.set("i", "<S-Left>",  "<C-o>v<C-o>h")
+vim.keymap.set("i", "<S-Right>", "<C-o>v<C-o>l")
+vim.keymap.set("i", "<S-Up>",    "<C-o>v<C-o>k")
+vim.keymap.set("i", "<S-Down>",  "<C-o>v<C-o>j")
+
+vim.keymap.set("v","<S-Down>","<Down>")
+
+--Head and Tail
+vim.keymap.set("n","(","^")
+vim.keymap.set("n",")","$")
+vim.keymap.set("v","(","^")
+vim.keymap.set("v",")","$")
+
+
