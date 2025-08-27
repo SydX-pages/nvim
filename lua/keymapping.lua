@@ -12,15 +12,15 @@ vim.keymap.set("n","<C-l>","<C-w>l")
 vim.keymap.set("n","<C-j>","<C-w>j")
 vim.keymap.set("n","<C-k>","<C-w>k")
 
-vim.keymap.set("n","<C-Left>","<C-w>h")
-vim.keymap.set("n","<C-Right>","<C-w>l")
+vim.keymap.set("n","<M-Left>","<C-w>h")
+vim.keymap.set("n","<M-Right>","<C-w>l")
 
 vim.keymap.set("i","<C-p>","<C-o>p")
 
 vim.keymap.set("i","<C-z>","<C-o>u")
-vim.keymap.set("i","<C-y>","<C-o><C-r>")
+vim.keymap.set("i","<C-x>","<C-o><C-r>")
 vim.keymap.set("n","<C-z>","u")
-vim.keymap.set("n","<C-y>","<C-r>")
+vim.keymap.set("n","<C-x>","<C-r>")
 
 
 --Save and Buffer actions
@@ -42,6 +42,11 @@ vim.keymap.set("i", "<S-Left>",  "<C-o>v<C-o>h")
 vim.keymap.set("i", "<S-Right>", "<C-o>v<C-o>l")
 vim.keymap.set("i", "<S-Up>",    "<C-o>v<C-o>k")
 vim.keymap.set("i", "<S-Down>",  "<C-o>v<C-o>j")
+vim.keymap.set("n", "<S-Left>",  "v<C-o>h")
+vim.keymap.set("n", "<S-Right>", "v<C-o>l")
+vim.keymap.set("n", "<S-Up>",    "v<C-o>k")
+vim.keymap.set("n", "<S-Down>",  "v<C-o>j")
+
 
 vim.keymap.set("v","<S-Down>","<Down>")
 
@@ -51,4 +56,8 @@ vim.keymap.set("n",")","$")
 vim.keymap.set("v","(","^")
 vim.keymap.set("v",")","$")
 
+vim.keymap.set("n","<C-Right>","$")
+vim.keymap.set("n","<C-Left>","^")
+vim.keymap.set("i","<C-Right>","<C-o>$")
+vim.keymap.set("i","<C-Left>","<C-o>^")
 
