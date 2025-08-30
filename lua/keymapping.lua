@@ -18,9 +18,9 @@ vim.keymap.set("n","<M-Right>","<C-w>l")
 vim.keymap.set("i","<C-p>","<C-o>p")
 
 vim.keymap.set("i","<C-z>","<C-o>u")
-vim.keymap.set("i","<C-x>","<C-o><C-r>")
+vim.keymap.set("i","<C-S-z>","<C-o><C-r>")
 vim.keymap.set("n","<C-z>","u")
-vim.keymap.set("n","<C-x>","<C-r>")
+vim.keymap.set("n","<C-S-z>","<C-r>")
 
 
 --Save and Buffer actions
@@ -33,8 +33,8 @@ vim.keymap.set("n","<S-Tab>","<cmd>bp<CR>")
 vim.keymap.set("i","<C-s>","<cmd>w<CR>")
 vim.keymap.set("n","<C-w>","<cmd>bd<CR>")
 vim.keymap.set("i","<C-w>","<cmd>bd<CR>")
-vim.keymap.set("n","<C-q>","<cmd>q<CR>")
-vim.keymap.set("i","<C-q>","<cmd>q<CR>")
+vim.keymap.set("n","<C-q>","<cmd>qa<CR>")
+vim.keymap.set("i","<C-q>","<cmd>qa<CR>")
 
 
 --Insert Choose
@@ -60,4 +60,6 @@ vim.keymap.set("n","<C-Right>","$")
 vim.keymap.set("n","<C-Left>","^")
 vim.keymap.set("i","<C-Right>","<C-o>$")
 vim.keymap.set("i","<C-Left>","<C-o>^")
+vim.keymap.set("v","<C-Right>","<C-o>$")
+vim.keymap.set("v","<C-Left>","<C-o>^")
 
