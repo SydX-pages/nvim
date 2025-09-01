@@ -14,6 +14,9 @@ vim.keymap.set("n","<C-k>","<C-w>k")
 
 vim.keymap.set("n","<M-Left>","<C-w>h")
 vim.keymap.set("n","<M-Right>","<C-w>l")
+vim.keymap.set("n","<M-Up>","<C-w>k")
+vim.keymap.set("n","<M-Down>","<C-w>j")
+
 
 vim.keymap.set("i","<C-p>","<C-o>p")
 
@@ -31,11 +34,12 @@ vim.keymap.set("n","<C-s>","<cmd>w<CR>")
 vim.keymap.set("n","<Tab>","<cmd>bn<CR>")
 vim.keymap.set("n","<S-Tab>","<cmd>bp<CR>")
 vim.keymap.set("i","<C-s>","<cmd>w<CR>")
-vim.keymap.set("n","<C-w>","<cmd>bd<CR>")
-vim.keymap.set("i","<C-w>","<cmd>bd<CR>")
+vim.keymap.set("n","<C-x>","<cmd>bd<CR>")
+vim.keymap.set("i","<C-x>","<cmd>bd<CR>")
 vim.keymap.set("n","<C-q>","<cmd>qa<CR>")
 vim.keymap.set("i","<C-q>","<cmd>qa<CR>")
-
+vim.keymap.set("n","<M-Space>","<C-w>>")
+vim.keymap.set("n","<M-S-Space>","<C-w><")
 
 --Insert Choose
 vim.keymap.set("i", "<S-Left>",  "<C-o>v<C-o>h")
@@ -62,4 +66,11 @@ vim.keymap.set("i","<C-Right>","<C-o>$")
 vim.keymap.set("i","<C-Left>","<C-o>^")
 vim.keymap.set("v","<C-Right>","<C-o>$")
 vim.keymap.set("v","<C-Left>","<C-o>^")
+
+--Code Runner
+vim.keymap.set("n","<M-Return>","<cmd>RunCode<CR>")
+vim.keymap.set("i","<M-Return>","<cmd>RunCode<CR>")
+vim.keymap.set("v","<M-Return>","<cmd>RunCode<CR>")
+
+
 
